@@ -22,5 +22,17 @@ namespace MethodMonteCarlo
                 return singletone;
             }
         }
+        public double CalculatePi(double NumIter)
+        {
+            Random r = new Random();
+            double k = 0;
+            for (int i = 0; i < NumIter; i++)
+            {
+                double x = (r.NextDouble() * 4) - 2;
+                double y = (r.NextDouble() * 4) - 2;
+                if (x * x + y * y <= 4) k++;
+            }
+            return (k / NumIter) * 4;
+        }
     }
 }

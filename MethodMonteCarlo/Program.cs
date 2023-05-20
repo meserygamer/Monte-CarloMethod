@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine((double)(MonteCarloMethod.GetObject().CalculatePi(10000000)));
         }
     }
 }
