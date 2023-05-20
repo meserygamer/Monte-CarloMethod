@@ -106,5 +106,17 @@ namespace MethodMonteCarlo
             }
             return (k / NumIter) * 32;
         }
+        public double CalculateSplashZad6(double NumIter)
+        {
+            Random r = new Random();
+            double k = 0;
+            for (int i = 0; i < NumIter; i++)
+            {
+                double x = (r.NextDouble() * 3);
+                double y = (r.NextDouble() * 1);
+                if (y >= (x - 2) * (x - 2) / 2 && y <= Math.Sin(x)) k++;
+            }
+            return (k / NumIter) * 3;
+        }
     }
 }
