@@ -10,6 +10,8 @@
             Console.WriteLine((double)(MonteCarloMethod.GetObject().CalculateSplashExample(1000000)));
             //Console.WriteLine((double)(MonteCarloMethod.GetObject().CalculateSplashZad1(Convert.ToInt32(Console.ReadLine()))));
             Console.WriteLine((double)(MonteCarloMethod.GetObject().CalculateSplashZad1(10000000)));
+            //Console.WriteLine((double)(MonteCarloMethod.GetObject().CalculateSplashZad2(Convert.ToInt32(Console.ReadLine()))));
+            Console.WriteLine((double)(MonteCarloMethod.GetObject().CalculateSplashZad2(10000000)));
         }
     }
 }
