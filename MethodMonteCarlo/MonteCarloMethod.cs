@@ -28,11 +28,11 @@ namespace MethodMonteCarlo
             double k = 0;
             for (int i = 0; i < NumIter; i++)
             {
-                double x = (r.NextDouble() * 4) - 2;
-                double y = (r.NextDouble() * 4) - 2;
-                if (x * x + y * y <= 4) k++;
+                double x = r.NextDouble();
+                double y = r.NextDouble();
+                if ((x - 1) * (x - 1) + (y - 1) * (y - 1) <= 1) k++;
             }
-            return (k / NumIter) * 4;
+            return (k / NumIter) / 0.25;
         }
         public double CalculateSplashExample(double NumIter)
         {
