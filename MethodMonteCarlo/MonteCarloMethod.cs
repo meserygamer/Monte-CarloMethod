@@ -30,7 +30,7 @@ namespace MethodMonteCarlo
             {
                 double x = r.NextDouble();
                 double y = r.NextDouble();
-                if ((x - 1) * (x - 1) + (y - 1) * (y - 1) <= 1) k++;
+                if ((x - 0.5) * (x - 0.5) + (y - 0.5) * (y - 0.5) <= 0.25) k++;
             }
             return (k / NumIter) / 0.25;
         }
